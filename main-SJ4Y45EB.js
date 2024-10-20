@@ -57,7 +57,6 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
     letter-spacing: -0.125rem;
     margin: 0;
     font-family:
-      openhouse,
       'Inter Tight',
       -apple-system,
       BlinkMacSystemFont,
