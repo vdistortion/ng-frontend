@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0",
-    "build": "ng build --base-href /ng-frontend/ && cd dist/browser && cp index.html 404.html",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "start": "nx serve --host 0.0.0.0",
+    "build": "nx build --base-href /ng-frontend/ && cd dist/browser && cp index.html 404.html",
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test",
     "format": "prettier . --write",
     "public:gh": "gh-pages -d dist/browser",
     "public": "npm run build && npm run public:gh"
@@ -27,8 +27,13 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.9",
+    "@angular-devkit/core": "^18.2.9",
+    "@angular-devkit/schematics": "^18.2.9",
     "@angular/cli": "^18.2.9",
     "@angular/compiler-cli": "^18.2.0",
+    "@nx/angular": "20.0.3",
+    "@nx/workspace": "20.0.3",
+    "@schematics/angular": "^18.2.9",
     "@types/jasmine": "~5.1.0",
     "gh-pages": "^6.2.0",
     "jasmine-core": "~5.2.0",
@@ -37,6 +42,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nx": "20.0.3",
     "prettier": "3.3.3",
     "typescript": "~5.5.2"
   }
