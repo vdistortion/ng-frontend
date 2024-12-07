@@ -7,6 +7,7 @@
     "build": "ng build --base-href /ng-frontend/ && cd dist/ng-frontend/browser && cp index.html 404.html",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "grep": "sh grep.sh",
     "format": "prettier . --write",
     "public:gh": "gh-pages -d dist/ng-frontend/browser",
     "public": "npm run build && npm run public:gh"
